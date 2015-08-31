@@ -156,7 +156,7 @@ public class LoadAssetFromBundle : MonoBehaviour
         else
         {
 			//if it is, just load the asset directly
-            loadedAsset = thisBundle.ThisAssetBundle.Load(assetName, typeof(GameObject));
+            loadedAsset = thisBundle.ThisAssetBundle.LoadAsset(assetName, typeof(GameObject));
             isDone = true;
         }
     }
@@ -184,7 +184,7 @@ public class LoadAssetFromBundle : MonoBehaviour
             thisAssetBundle = www.assetBundle;
 			
 			//load the specified asset into memory
-            loadedAsset = thisAssetBundle.Load(asset, typeof(GameObject));
+            loadedAsset = thisAssetBundle.LoadAsset(asset, typeof(GameObject));
 
             www.Dispose();
 
