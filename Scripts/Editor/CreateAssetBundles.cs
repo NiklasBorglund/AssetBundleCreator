@@ -225,7 +225,7 @@ public class CreateAssetBundles
                 if (asset.EndsWith(".prefab"))
                 {
                     string internalFilePath = "Assets" + assetBundleFolderLocation + dirInfo.Name + "/" + thisFileName;
-                    GameObject prefab = (GameObject)Resources.LoadAssetAtPath(internalFilePath, typeof(GameObject));
+                    GameObject prefab = (GameObject)AssetDatabase.LoadAssetAtPath(internalFilePath, typeof(GameObject));
                     toInclude.Add((Object)prefab);
 
                     assetListInFolder.Add(thisFileName);
@@ -234,7 +234,7 @@ public class CreateAssetBundles
                 {
                     //toInclude.AddRange(AssetDatabase.LoadAllAssetsAtPath(assetBundleFolderLocation + dirInfo.Name + "/" + thisFileName));
 					string internalFilePath = "Assets" + assetBundleFolderLocation + dirInfo.Name + "/" + thisFileName;
-                    toInclude.Add((Object)Resources.LoadAssetAtPath(internalFilePath, typeof(Object)));
+                    toInclude.Add((Object)AssetDatabase.LoadAssetAtPath(internalFilePath, typeof(Object)));
                     assetListInFolder.Add(thisFileName);
                 }
             }
