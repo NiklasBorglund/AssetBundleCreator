@@ -1,3 +1,5 @@
+* This Plugin is not being actively developed anymore *
+
 ﻿AssetBundleCreator by Niklas Borglund - niklasborglund[at]gmail[dot]com, @NiklasBorglund
 ---------------------------------------
 This editor extension is created to make it really easy for everyone to create asset bundles.
